@@ -1,0 +1,23 @@
+PREPARANDO AMBIENTE
+1- fazer download e instalar nodeJS
+2- após instalar, testar o comando (node -v e npm -v)
+3- acessar o site da IONIC
+4- acessar a aba install with CLI
+5- copiar os codigos (npm install -g ionic) e (npm install -g cordova)
+----------------------------------------------------------------------------
+CRIAR UM APP
+1- prepare o local onde quer instalar
+2- ionic start myapp (tabs ou sidemenu ou blank)
+3- após terminar instalação voce deve acessar a pasta onde foi instalado 
+digitar o comando IONIC SERVE (vai iniciar o seu app)
+-------------------------------------------------------------------------
+GERAR NOVA PAGINA OU ABA
+1- digitar no terminal -> ionic generate page + nome da pagina
+visitar a pagina do ionic e procurar a sessão docs/cli/commands/generate para ver mais opções.
+-----------------------------------------------------------------------------------------------
+PUBLICAR P
+1- criar uma card na aba html da pagina criada,os cards podem ser visto no site da ionic
+2- informar o nome da classe que esta no modulo.ts na pagina criada
+3- vá em module.ts dos app em imports[informar o nome da classe]
+4- vá na pagina criada em feed.pages.ts e copia o nome da classe em tabs-tabes.pages.ts na parte TabsPage
+5- em tabs tabs.pages.html
