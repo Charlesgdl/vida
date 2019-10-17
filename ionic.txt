@@ -21,3 +21,5 @@ PUBLICAR P
 3- vá em module.ts dos app em imports[informar o nome da classe]
 4- vá na pagina criada em feed.pages.ts e copia o nome da classe em tabs-tabes.pages.ts na parte TabsPage
 5- em tabs tabs.pages.html
+
+Charles
