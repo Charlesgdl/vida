@@ -19,7 +19,8 @@ const routes: Routes = [
   { path: 'cadastro-hospital', loadChildren: './cadastro-hospital/cadastro-hospital.module#CadastroHospitalPageModule' },
   { path: 'esqueceu-senha', loadChildren: './esqueceu-senha/esqueceu-senha.module#EsqueceuSenhaPageModule' },
   { path: 'alterar-dados', loadChildren: './alterar-dados/alterar-dados.module#AlterarDadosPageModule' },
-  { path: 'lista-doador', loadChildren: './lista-doador/lista-doador.module#ListaDoadorPageModule' }
+  { path: 'lista-doador', loadChildren: './lista-doador/lista-doador.module#ListaDoadorPageModule' },  { path: 'detalhes-doadores', loadChildren: './detalhes-doadores/detalhes-doadores.module#DetalhesDoadoresPageModule' }
+
 ];
 
 @NgModule({
