@@ -7,16 +7,37 @@
         </ion-toolbar>
       </ion-header>
       <ion-content>
-        <ion-list>
+        <ion-list >
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
               <ion-label>
                 {{p.title}}
               </ion-label>
             </ion-item>
+
+            <ion-item [routerDirection]="'root'" [routerLink]="['/login']">
+              <ion-icon slot="start" name="contact"></ion-icon>
+              <ion-label>
+                Fazer Login
+              </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="['/cadastro-usuario']">
+              <ion-icon slot="start" name="person-add"></ion-icon>
+              <ion-label>
+                Cadastro de Usuário
+              </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="['/cadastro-hospital']">
+              <ion-icon slot="start" name="medkit"></ion-icon>
+              <ion-label>
+                Cadastro de Hospital
+              </ion-label>
+            </ion-item>
           </ion-menu-toggle>
         </ion-list>
+       
       </ion-content>
     </ion-menu>
     <ion-router-outlet main></ion-router-outlet>

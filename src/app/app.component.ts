@@ -14,10 +14,12 @@ export class AppComponent {
     {
       title: 'Home',
       url: '/home',
-      icon: 'home'
+      icon: 'home',
     },
+    
    
   ];
+
 
   constructor(
     private platform: Platform,
