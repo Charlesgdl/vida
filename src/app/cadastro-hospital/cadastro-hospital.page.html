@@ -1,37 +1,44 @@
 <ion-header>
   <ion-toolbar>
-      <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-    <ion-title class="titulo"> <h1 class="textoTitulo">Cadastro de Hospital</h1></ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="titulo">
+      <h1 class="textoTitulo">Cadastro de Hospital</h1>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <form>
     <ion-item>
-      <ion-input placeholder="Nome do Hospital"></ion-input>
+      <ion-label position="floating">Nome do Hospital</ion-label>
+      <ion-input clearInput type="text"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input placeholder="Endereço"></ion-input>
+      <ion-label position="floating">Endereço</ion-label>
+      <ion-input clearInput type="text"></ion-input>
     </ion-item>
-    <ion-item>
 
-      <ion-input placeholder="Telefone"></ion-input>
-    </ion-item>
     <ion-item>
-
-      <ion-input placeholder="CNPJ"></ion-input>
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input clearInput type="tel"></ion-input>
     </ion-item>
+
     <ion-item>
-
-      <ion-input placeholder="Senha"></ion-input>
+      <ion-label position="floating">CNPJ</ion-label>
+      <ion-input clearInput type="number"></ion-input>
     </ion-item>
-  
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input clearInput type="password"></ion-input>
+    </ion-item>
+
     <ion-row class="linha">
-      <ion-button class="b3" color="">
-        <h4>Salvar</h4>
+      <ion-button class="b3">
+        <h6>Salvar</h6>
       </ion-button>
     </ion-row>
 

@@ -1,54 +1,66 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button ></ion-menu-button>
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title class="titulo"> <h1 class="textoTitulo">Cadastro de Usuário</h1></ion-title>
+    <ion-title class="titulo">
+      <h1 class="textoTitulo">Cadastro de Usuário</h1>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <form>
+
     <ion-item>
-      <ion-input placeholder="Nome completo"></ion-input>
+      <ion-label position="floating">Nome completo</ion-label>
+      <ion-input clearInput type="text"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input placeholder="CPF"></ion-input>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input clearInput type="number"></ion-input>
     </ion-item>
-    <ion-item>
 
-      <ion-input placeholder="Data nascimento"></ion-input>
+    <ion-item>
+      <ion-label position="floating">Data nascimento</ion-label>
+      <ion-input clearInput type="date"></ion-input>
     </ion-item>
-    <ion-item>
 
-      <ion-input placeholder="Peso"></ion-input>
+    <!-- <ion-item>
+        <ion-label position="floating">Peso</ion-label>
+        <ion-input clearInput type="text"></ion-input>
+      </ion-item> -->
+
+    <ion-item>
+      <ion-label position="floating">Endereço</ion-label>
+      <ion-input clearInput type="text"></ion-input>
     </ion-item>
-    <ion-item>
 
-      <ion-input placeholder="Endereço"></ion-input>
+    <ion-item>
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input clearInput type="tel"></ion-input>
     </ion-item>
-    <ion-item>
 
-      <ion-input placeholder="Telefone"></ion-input>
+    <ion-item>
+      <ion-label position="floating">Tipo sanguíneo</ion-label>
+      <ion-input clearInput type="text"></ion-input>
     </ion-item>
-    <ion-item>
 
-      <ion-input placeholder="Tipo sanguíneo"></ion-input>
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input clearInput type="email"></ion-input>
     </ion-item>
-    <ion-item>
 
-      <ion-input placeholder=E-mail></ion-input>
-    </ion-item>
     <ion-item>
-
-      <ion-input placeholder="Senha"></ion-input>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input clearInput type="password"></ion-input>
     </ion-item>
 
 
     <ion-row class="linha">
-      <ion-button class="b3" color="">
-        <h4>Salvar</h4>
+      <ion-button class="b3">
+        <h6>Salvar</h6>
       </ion-button>
     </ion-row>
 
