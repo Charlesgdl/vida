@@ -12,4 +12,13 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+  
+  exibir(){
+    let email = document.getElementsByClassName('email').namedItem;
+    alert(+email);
+    
+  }
+
 }
+
+

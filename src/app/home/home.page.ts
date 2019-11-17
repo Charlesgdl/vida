@@ -1,3 +1,4 @@
+import { by } from 'protractor';
 import { Component } from '@angular/core';
 
 
@@ -8,11 +9,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {
-  
+  constructor() {}
+
   
 
-}
+
 }
 
 

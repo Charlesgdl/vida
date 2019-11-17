@@ -1,35 +1,38 @@
 <ion-header>
+    
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title class="titulo">
-      <h1 class="textoTitulo">Login</h1>
+      <h6 class="textoTitulo">Login</h6>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="container">
-<div class="row" style="width: 50px">
-    <form>
-      <ion-item>
-        <ion-input clearInput type="text"></ion-input>
+  
+  <div class="container" >
+<div class="login">
+    <form class=container>
+      
+      <ion-item>   
+          <ion-label position="floating">E-mail</ion-label>
+        <ion-input class="email" clearInput type="email"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label position="floating">Senha</ion-label>
-        <ion-input clearInput type="password"></ion-input>
+        <ion-input id="senha" clearInput type="password"></ion-input>
       </ion-item>
 
-      <ion-row class="linha">
-        <ion-button class="b3">
+         <ion-button  (click)="exibir()">
           <h6>Acessar</h6>
         </ion-button>
-      </ion-row>
-
+    
     </form>
   </div>
   </div>
 
 </ion-content>
+
