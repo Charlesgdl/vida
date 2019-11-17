@@ -14,8 +14,6 @@ export class LoginPage implements OnInit {
 
   
   exibir(){
-    let email = document.getElementsByClassName('email').namedItem;
-    alert(+email);
     
   }
 
