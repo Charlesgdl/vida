@@ -5,7 +5,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title >
-      <h6 >Login</h6>
+      <h6 class="textoTitulo">Login</h6>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,10 +15,18 @@
   <div class="container" >
 <div class="login">
     <form class=container>
+        <ion-radio-group>
+            <ion-item> 
+                <ion-label>Doador</ion-label>
+              <ion-radio value="Hospital"  ></ion-radio>
+              <ion-radio  slot="start" value="Doador" checked></ion-radio>
+              <ion-label>Hospital</ion-label>
+              </ion-item>
+            </ion-radio-group>
       
       <ion-item>   
           <ion-label position="floating">E-mail</ion-label>
-        <ion-input class="email" clearInput type="email"></ion-input>
+        <ion-input id="email" clearInput type="email"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -26,10 +34,11 @@
         <ion-input id="senha" clearInput type="password"></ion-input>
       </ion-item>
 
-         <ion-button color="dark" (click)="exibir()">
+         <ion-button  (click)="exibir()">
           <h6>Acessar</h6>
         </ion-button>
     
+        
     </form>
   </div>
   </div>
