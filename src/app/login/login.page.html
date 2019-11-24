@@ -17,14 +17,14 @@
     <form class=container>
         <ion-radio-group>
             <ion-item> 
-                <ion-label>Doador</ion-label>
+              <ion-label>Doador</ion-label>
               <ion-radio value="Hospital"  ></ion-radio>
               <ion-radio  slot="start" value="Doador" checked></ion-radio>
-              <ion-label>Hospital</ion-label>
+              <ion-label style="padding-left: 20px">Hospital</ion-label>
               </ion-item>
-            </ion-radio-group>
+        </ion-radio-group>
       
-      <ion-item>   
+      <ion-item  style="margin-top: 20px">   
           <ion-label position="floating">E-mail</ion-label>
         <ion-input id="email" clearInput type="email"></ion-input>
       </ion-item>
@@ -33,10 +33,18 @@
         <ion-label position="floating">Senha</ion-label>
         <ion-input id="senha" clearInput type="password"></ion-input>
       </ion-item>
-
-         <ion-button  (click)="exibir()">
-          <h6>Acessar</h6>
-        </ion-button>
+  <br><br>
+      <ion-item>
+          <ion-button color="dark" class="b3">
+            <h6>Acessar</h6>
+          </ion-button>
+        </ion-item>
+        <br><br>
+        <ion-item>
+            <ion-button color="dark" class="b3">
+              <h6>Esqueceu sua Senha?</h6>
+            </ion-button>
+          </ion-item>
     
         
     </form>
