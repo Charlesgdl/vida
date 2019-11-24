@@ -35,6 +35,22 @@
                 Cadastro de Hospital
               </ion-label>
             </ion-item>
+           
+            <ion-item disabled="true" [routerDirection]="'root'" [routerLink]="['/atualizar-usuario']">
+              <ion-icon slot="start" name="create"></ion-icon>
+              <ion-label>
+                Atualizar Dados
+              </ion-label>
+            </ion-item>
+
+            <ion-item disabled="true" [routerDirection]="'root'" [routerLink]="['/']">
+              <ion-icon slot="start" name="exit"></ion-icon>
+              <ion-label>
+                Sair
+              </ion-label>
+            </ion-item>
+            
+
           </ion-menu-toggle>
         </ion-list>
        

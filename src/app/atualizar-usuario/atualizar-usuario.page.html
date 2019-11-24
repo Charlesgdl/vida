@@ -1,0 +1,87 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title >
+        <h6>Atualizar Doador</h6>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <form>
+  
+      <ion-item>
+        <ion-label position="floating">Nome completo</ion-label>
+        <ion-input clearInput type="text"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">CPF</ion-label>
+        <ion-input clearInput type="number"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+            <ion-label position="floating">Data Nascimento</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY" ></ion-datetime>
+          </ion-item>
+  
+      
+  
+      <!-- <ion-item>
+          <ion-label position="floating">Peso</ion-label>
+          <ion-input clearInput type="text"></ion-input>
+        </ion-item> -->
+  
+      <ion-item>
+        <ion-label position="floating">Endereço</ion-label>
+        <ion-input clearInput type="text"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Telefone</ion-label>
+        <ion-input clearInput type="tel"></ion-input>
+      </ion-item>
+  
+      <ion-item> 
+          <ion-label position="floating">Tipo Sanguíneo</ion-label>
+        <ion-select  interface="popover">
+            
+          <ion-select-option value="A+">A +</ion-select-option>
+          <ion-select-option value="B+">B +</ion-select-option>
+          <ion-select-option value="A-">A -</ion-select-option>
+          <ion-select-option value="B-">B -</ion-select-option>
+          <ion-select-option value="AB+">AB +</ion-select-option>
+          <ion-select-option value="AB-">AB -</ion-select-option>
+          <ion-select-option value="O+">O +</ion-select-option>
+          <ion-select-option value="O-">O -</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <!--<ion-item>
+        <ion-label position="floating">Tipo sanguíneo</ion-label>
+        <ion-input clearInput type="text"></ion-input>
+      </ion-item>-->
+  
+      <ion-item>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input clearInput type="email"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input clearInput type="password"></ion-input>
+      </ion-item>
+  
+      
+  
+  
+      <ion-item>
+        <ion-button color="dark" class="b3">
+          <h6>Atualizar</h6>
+        </ion-button>
+      </ion-item>
+    
+  
+    </form>
+  </ion-content>

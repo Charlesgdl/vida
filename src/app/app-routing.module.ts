@@ -17,9 +17,13 @@ const routes: Routes = [
   { path: 'visualizar-por-hospital', loadChildren: './visualizar-por-hospital/visualizar-por-hospital.module#VisualizarPorHospitalPageModule' },
   { path: 'cadastro-usuario', loadChildren: './cadastro-usuario/cadastro-usuario.module#CadastroUsuarioPageModule' },
   { path: 'cadastro-hospital', loadChildren: './cadastro-hospital/cadastro-hospital.module#CadastroHospitalPageModule' },
-  { path: 'esqueceu-senha', loadChildren: './esqueceu-senha/esqueceu-senha.module#EsqueceuSenhaPageModule' },
-  { path: 'alterar-dados', loadChildren: './alterar-dados/alterar-dados.module#AlterarDadosPageModule' },
-  { path: 'lista-doador', loadChildren: './lista-doador/lista-doador.module#ListaDoadorPageModule' },  { path: 'detalhes-doadores', loadChildren: './detalhes-doadores/detalhes-doadores.module#DetalhesDoadoresPageModule' }
+  { path: 'lista-doador', loadChildren: './lista-doador/lista-doador.module#ListaDoadorPageModule' },
+  { path: 'detalhes-doadores', loadChildren: './detalhes-doadores/detalhes-doadores.module#DetalhesDoadoresPageModule' },
+  { path: 'recuperar-senha', loadChildren: './recuperar-senha/recuperar-senha.module#RecuperarSenhaPageModule' },
+  { path: 'atualizar-usuario', loadChildren: './atualizar-usuario/atualizar-usuario.module#AtualizarUsuarioPageModule' },
+  { path: 'atualizar-hospital', loadChildren: './atualizar-hospital/atualizar-hospital.module#AtualizarHospitalPageModule' }
+
+
 
 ];
 

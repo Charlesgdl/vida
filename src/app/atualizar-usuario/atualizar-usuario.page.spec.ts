@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EsqueceuSenhaPage } from './esqueceu-senha.page';
+import { AtualizarUsuarioPage } from './atualizar-usuario.page';
 
-describe('EsqueceuSenhaPage', () => {
-  let component: EsqueceuSenhaPage;
-  let fixture: ComponentFixture<EsqueceuSenhaPage>;
+describe('AtualizarUsuarioPage', () => {
+  let component: AtualizarUsuarioPage;
+  let fixture: ComponentFixture<AtualizarUsuarioPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EsqueceuSenhaPage ],
+      declarations: [ AtualizarUsuarioPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EsqueceuSenhaPage);
+    fixture = TestBed.createComponent(AtualizarUsuarioPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

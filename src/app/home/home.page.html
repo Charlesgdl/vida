@@ -3,44 +3,64 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title >
-      <h6 > Salve Vidas </h6>
+    <ion-title>
+      <h6> Salve Vidas </h6>
     </ion-title>
   </ion-toolbar>
-  
+
 </ion-header>
 
 <ion-content>
-    <ion-grid>
+  <ion-grid>
+    <ion-row class="linha">
+      <ion-button class="b1" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>A +</h1>
+      </ion-button>
+      <ion-button class="b2" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>B +</h1>
+      </ion-button>
+    </ion-row>
 
-       
-        
-        <ion-row class="linha">
-              <ion-button class="b1" color="dark"  [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']"><h1>A +</h1></ion-button >
-              <ion-button class="b2" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']"><h1>B +</h1></ion-button>
-        </ion-row>
+    <ion-row class="linha">
+      <ion-button class="b1" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>A -</h1>
+      </ion-button>
+      <ion-button class="b2" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>B -</h1>
+      </ion-button>
+    </ion-row>
 
-        <ion-row class="linha">
-            <ion-button class="b1"  color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']"><h1>A -</h1></ion-button>
-            <ion-button class="b2"  color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']"><h1>B -</h1></ion-button>
-        </ion-row>
-    
-        <ion-row class="linha">
-            <ion-button class="b1"  color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']"><h1>AB +</h1></ion-button>
-            <ion-button class="b2"  color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']"><h1>AB -</h1></ion-button>
-        </ion-row>
+    <ion-row class="linha">
+      <ion-button class="b1" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>AB +</h1>
+      </ion-button>
+      <ion-button class="b2" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>AB -</h1>
+      </ion-button>
+    </ion-row>
 
-        <ion-row class="linha">
-            <ion-button class="b1"  color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']"><h1>O +</h1></ion-button>
-            <ion-button class="b2"  color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']"><h1>O -</h1></ion-button>
-        </ion-row>
+    <ion-row class="linha">
+      <ion-button class="b1" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>O +</h1>
+      </ion-button>
+      <ion-button class="b2" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>O -</h1>
+      </ion-button>
+    </ion-row>
 
-        <ion-row class="linha">
-            <ion-button class="b3"  color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-hospital']"><h1>Hospitais</h1></ion-button>
-        </ion-row>
+    <ion-row class="linha">
+      <ion-button class="b3" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-hospital']">
+        <ion-icon slot="start" name="medkit"></ion-icon>
+        <h1>Hospitais</h1>
+      </ion-button>
+    </ion-row>
 
-    
-      </ion-grid> 
+    <ion-row disabled="true" class="linha">
+      <ion-button class="b3" color="dark" [routerDirection]="'root'" [routerLink]="['/lista-doador']">
+        <ion-icon slot="start" name="people"></ion-icon>
+        <h1>Doadores</h1>
+      </ion-button>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>
-
-
