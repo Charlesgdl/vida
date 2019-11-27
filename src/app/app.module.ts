@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
 
 
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
