@@ -9,7 +9,7 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
 })
 export class CadastroUsuarioPage implements OnInit {
 
-  constructor(private sqlite: SQLite) {
+  constructor(private sqlite: SQLite) {}
     
     //this.sqlite.create({
      // name: 'vida.db',
@@ -23,7 +23,7 @@ export class CadastroUsuarioPage implements OnInit {
    // .catch(e => console.log(e));
  // }
   
-  }
+ 
   
 
   ngOnInit() {
