@@ -2,16 +2,8 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },
-
+  { path: '',redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomePageModule) },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'visualizar-por-sangue', loadChildren: './visualizar-por-sangue/visualizar-por-sangue.module#VisualizarPorSanguePageModule' },
   { path: 'visualizar-por-hospital', loadChildren: './visualizar-por-hospital/visualizar-por-hospital.module#VisualizarPorHospitalPageModule' },
@@ -22,9 +14,6 @@ const routes: Routes = [
   { path: 'recuperar-senha', loadChildren: './recuperar-senha/recuperar-senha.module#RecuperarSenhaPageModule' },
   { path: 'atualizar-usuario', loadChildren: './atualizar-usuario/atualizar-usuario.module#AtualizarUsuarioPageModule' },
   { path: 'atualizar-hospital', loadChildren: './atualizar-hospital/atualizar-hospital.module#AtualizarHospitalPageModule' }
-
-
-
 ];
 
 @NgModule({

@@ -9,4 +9,9 @@
 
 <ion-content>
     <ion-searchbar></ion-searchbar>
+    <ion-card *ngFor="let doador of doadores">
+        <ion-item>
+                <p>{{doador.nome}} - {{doador.cpf}}</p>          
+          </ion-item>
+    </ion-card>
 </ion-content>

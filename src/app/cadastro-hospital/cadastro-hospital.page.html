@@ -10,68 +10,67 @@
 </ion-header>
 
 <ion-content>
-  <form>
+  
     <ion-item>
       <ion-label position="floating">Nome do Hospital</ion-label>
-      <ion-input clearInput type="text"></ion-input>
+      <ion-input [(ngModel)]="hospital.nome" clearInput type="text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">Endereço</ion-label>
-      <ion-input clearInput type="text"></ion-input>
+      <ion-input [(ngModel)]="hospital.endereco" clearInput type="text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">Telefone</ion-label>
-      <ion-input clearInput type="tel"></ion-input>
+      <ion-input [(ngModel)]="hospital.telefone" clearInput type="tel"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">CNPJ</ion-label>
-      <ion-input clearInput type="number"></ion-input>
+      <ion-input [(ngModel)]="hospital.CNPJ" clearInput type="number"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label position="floating">E-mail</ion-label>
-        <ion-input clearInput type="email"></ion-input>
+        <ion-input [(ngModel)]="hospital.email" clearInput type="email"></ion-input>
       </ion-item>
 
     <ion-item>
       <ion-label position="floating">Senha</ion-label>
-      <ion-input clearInput type="password"></ion-input>
+      <ion-input [(ngModel)]="hospital.senha" clearInput type="password"></ion-input>
     </ion-item>
-    <ion-list>
-        <ion-list-header>Sangue Urgente</ion-list-header>
-    <ion-item>
-        <ion-checkbox></ion-checkbox>
+    
+      <ion-item>
+          <ion-label color="danger">Sangue Urgente</ion-label>
+      </ion-item>
+        
+    <ion-item> 
+        <ion-checkbox [(ngModel)]="hospital.sAp"></ion-checkbox>
         <ion-label> A+</ion-label>
-        <ion-checkbox></ion-checkbox>
-        <ion-label> B+</ion-label>
-        <ion-checkbox></ion-checkbox>
+        <ion-checkbox checked [(ngModel)]="hospital.sAn"></ion-checkbox>
         <ion-label> A-</ion-label>
-        <ion-checkbox>teste</ion-checkbox>
+        <ion-checkbox checked [(ngModel)]="hospital.sBp"></ion-checkbox>
+        <ion-label> B+</ion-label>
+        <ion-checkbox checked [(ngModel)]="hospital.sBn"></ion-checkbox>
         <ion-label> B-</ion-label>
       </ion-item>
       <ion-item>
-          <ion-checkbox></ion-checkbox>
+          <ion-checkbox checked [(ngModel)]="hospital.sABp"></ion-checkbox>
           <ion-label> AB+</ion-label>
-          <ion-checkbox></ion-checkbox>
-          <ion-label> AB+</ion-label>
-          <ion-checkbox></ion-checkbox>
-          <ion-label> O-</ion-label>
-          <ion-checkbox>teste</ion-checkbox>
+          <ion-checkbox checked [(ngModel)]="hospital.sABn"></ion-checkbox>
+          <ion-label> AB-</ion-label>
+          <ion-checkbox checked [(ngModel)]="hospital.sOp"></ion-checkbox>
+          <ion-label> O+</ion-label>
+          <ion-checkbox checked [(ngModel)]="hospital.sOn"></ion-checkbox>
           <ion-label> O-</ion-label>
       </ion-item>
-      </ion-list>
+    
     
     <ion-item>
-        <ion-button color="dark" class="b3">
+        <ion-button (click)="salvar()" color="dark" class="b3">
           <h6>Salvar</h6>
         </ion-button>
       </ion-item>
-
-
-  </form>
-  
 
 </ion-content>

@@ -9,24 +9,42 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
 })
 export class CadastroUsuarioPage implements OnInit {
 
+  public doador:Usuarios = new Usuarios()
   constructor(private sqlite: SQLite) {}
-    
-    //this.sqlite.create({
-     // name: 'vida.db',
-     // location: 'default'
-   // })
-     // .then((db: SQLiteObject) => {
-     // db.executeSql('create table doador(id INT not null, nome varchar(50), cpf varchar(15),dtNasc date, endereco varchar(100), telefone varchar(30), tipoSangue varchar(5),email varchar(50), senha varchar(10), primary key(id))', [])
-      //  .then(() => console.log('Tabela doador criada com sucesso'))
-      //  .catch(e => console.log(e));
-   // })
-   // .catch(e => console.log(e));
- // }
-  
- 
-  
 
-  ngOnInit() {
+  
+   
+    ngOnInit() {
+  }
+
+  public salvar(){
+    console.log(this.doador);
+    alert("Registro salvo com sucesso");
   }
 
 }
+export class Usuarios{
+  public nome: string
+  public cpf: string
+  public dtnasc: Date
+  public endereco: string
+  public telefone: string
+  public tipoSang: string
+  public email: string
+  public senha: string
+
+  constructor(){
+    this.nome = ""
+    this.cpf = ""
+    this.dtnasc = null
+    this.endereco = ""
+    this.telefone = ""
+    this.tipoSang = ""
+    this.email = ""
+    this.senha = ""
+  }
+
+}
+
+
+

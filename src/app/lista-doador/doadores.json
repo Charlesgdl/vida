@@ -1,0 +1,42 @@
+[
+    {
+      "nome": "Daniel Lima",
+      "CPF":"000.000.000-00",
+      "dataNasc":"10/10/1982",
+      "endereco":"Rua A",
+      "telefone":"82 991415167",
+      "tipoSangue":"A+",
+      "email":"danieluncisalsi@hotmail.com",
+      "senha":"********"
+    },
+    {
+        "nome": "Charles Gomes",
+        "CPF":"111.111.111-50",
+        "dataNasc":"10/07/1995",
+        "endereco":"Rua A",
+        "telefone":"82 991415167",
+        "tipoSangue":"A+",
+        "email":"danieluncisalsi@hotmail.com",
+        "senha":"********"
+      },
+      {
+        "nome": "Jonathan Kelvin",
+        "CPF":"222.222.222-22",
+        "dataNasc":"10/10/1982",
+        "endereco":"Rua A",
+        "telefone":"82 991415167",
+        "tipoSangue":"A+",
+        "email":"danieluncisalsi@hotmail.com",
+        "senha":"********"
+      },
+      {
+        "nome": "Aline Paula",
+        "CPF":"333.333.333-33",
+        "dataNasc":"10/10/1982",
+        "endereco":"Rua A",
+        "telefone":"82 991415167",
+        "tipoSangue":"A+",
+        "email":"danieluncisalsi@hotmail.com",
+        "senha":"********"
+      }
+]
