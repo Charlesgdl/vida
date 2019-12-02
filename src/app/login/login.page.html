@@ -14,7 +14,7 @@
   
   <div class="container" >
 <div class="login">
-    <form class=container>
+    
         <ion-radio-group>
             <ion-item> 
               <ion-label>Doador</ion-label>
@@ -26,16 +26,16 @@
       
       <ion-item  style="margin-top: 20px">   
           <ion-label position="floating">E-mail</ion-label>
-        <ion-input id="email" clearInput type="email"></ion-input>
+        <ion-input required [(ngModel)] ="login.email" id="email" clearInput type="email"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label position="floating">Senha</ion-label>
-        <ion-input id="senha" clearInput type="password"></ion-input>
+        <ion-input required [(ngModel)]="login.senha" id="senha" clearInput type="password"></ion-input>
       </ion-item>
   <br><br>
       <ion-item>
-          <ion-button color="dark" class="b3">
+          <ion-button (click)="acessar()" color="dark" class="b3">
             <h6>Acessar</h6>
           </ion-button>
         </ion-item>
@@ -44,8 +44,6 @@
  <ion-button color="dark" class="b3"  [routerDirection]="'root'" [routerLink]="['/recuperar-senha']"><h6>Esqueceu a Senha?</h6></ion-button >
           </ion-item>
     
-        
-    </form>
   </div>
   </div>
 

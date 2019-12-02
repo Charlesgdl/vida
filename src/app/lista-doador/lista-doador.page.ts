@@ -9,11 +9,14 @@ import { Observable } from 'rxjs';
 })
 export class ListaDoadorPage implements OnInit {
   doadores: any;
-  url = 'http://localhost:8100/arquivosJson/';
+  
+  
+  url = 'http://localhost:8100/src/app/arquivosJson/doadores.json';
+  ibge = 'https://servicodados.ibge.gov.br/api/v2/censos/nomes/daniel%7Ckelvin%7Ccharles%7Calyne%7CRony%7CAlex';      
   constructor(private http: HttpClient) { }
 
   getDoadores():Observable<any>{
-    return this.http.get<any>(this.url);
+    return this.http.get<any>(this.ibge);
   }
 
   ngOnInit() {

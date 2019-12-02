@@ -7,16 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
+  public login:Login = new Login()
   constructor() { }
 
   ngOnInit() {
   }
 
-  
-  exibir(){
-    
+  public acessar(){
+    if((this.login.email=="daniel@gmail.com") &&
+    (this.login.senha="123456")){
+      console.log(this.login);
+      alert("Acesso permitido");
+    }else{
+      alert("Acesso não permitido");
+    }
+     
   }
 
 }
 
+export class Login{
+  public email: string
+  public senha: string
+
+  constructor(){
+    this.email = ""
+    this.senha = ""
+  }
+
+}
 

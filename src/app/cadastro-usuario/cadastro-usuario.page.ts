@@ -12,8 +12,6 @@ export class CadastroUsuarioPage implements OnInit {
   public doador:Usuarios = new Usuarios()
   constructor(private sqlite: SQLite) {}
 
-  
-   
     ngOnInit() {
   }
 

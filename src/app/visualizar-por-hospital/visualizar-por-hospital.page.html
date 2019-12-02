@@ -11,4 +11,9 @@
 
 <ion-content>
     <ion-searchbar></ion-searchbar>
+    <ion-card *ngFor="let hospital of hospitais">
+      <ion-item>
+              <h4>{{hospital.id}} - {{hospital.nome}}</h4>          
+        </ion-item>
+  </ion-card>
 </ion-content>

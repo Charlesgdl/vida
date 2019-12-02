@@ -44,8 +44,7 @@
 
     <ion-item> 
         <ion-label position="floating">Tipo Sanguíneo</ion-label>
-      <ion-select  [(ngModel)]="doador.tipoSang" interface="popover">
-          
+      <ion-select  [(ngModel)]="doador.tipoSang" interface="popover">   
         <ion-select-option value="A+">A +</ion-select-option>
         <ion-select-option value="B+">B +</ion-select-option>
         <ion-select-option value="A-">A -</ion-select-option>
@@ -63,12 +62,12 @@
 
     <ion-item>
       <ion-label position="floating">E-mail</ion-label>
-      <ion-input [(ngModel)]="doador.email" clearInput type="email"></ion-input>
+      <ion-input required [(ngModel)]="doador.email" clearInput type="email"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position ="floating">Senha</ion-label>
-      <ion-input [(ngModel)]="doador.senha" clearInput type="password"></ion-input>
+      <ion-input required [(ngModel)]="doador.senha" clearInput type="password"></ion-input>
     </ion-item>
 
     
