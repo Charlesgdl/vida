@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecuperarSenhaPage implements OnInit {
 
+   public recSenha:RecSenha = new RecSenha();
   constructor() { }
 
   ngOnInit() {
   }
 
+  public enviaEmail(){
+    console.log(this.recSenha);
+    alert("Email enviado com sucesso!");
+  }
+
+}
+
+export class RecSenha{
+  public email: string
+
+  constructor(){
+    this.email = ""
+   
+  }
 }

@@ -8,15 +8,15 @@
 </ion-header>
 
 <ion-content>
-    <form>
+    <form (ngSubmit)="enviaEmail()">
         <br><br>
       <ion-item>
           <ion-label position="floating">E-mail</ion-label>
-          <ion-input clearInput type="email"></ion-input>
+          <ion-input required="true" name="email" clearInput type="email" [(ngModel)]="recSenha.email"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-button color="dark" class="b3">
+          <ion-button type="ngSubmit" color="dark" class="b3"  [routerDirection]="'root'" [routerLink]="['/login']">
             <h6>Enviar</h6>
           </ion-button>
         </ion-item>

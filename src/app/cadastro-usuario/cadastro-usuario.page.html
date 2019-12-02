@@ -3,29 +3,30 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title >
+    <ion-title>
       <h6>Cadastro de Doador</h6>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content> 
+<ion-content>
+  <form (ngSubmit)="salvar()">
     <ion-item>
       <ion-label position="floating">Nome completo</ion-label>
-      <ion-input [(ngModel)]="doador.nome" clearInput type="text"></ion-input>
+      <ion-input [(ngModel)]="doador.nome" name="nome" clearInput type="text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">CPF</ion-label>
-      <ion-input [(ngModel)]="doador.cpf" clearInput type="number"></ion-input>
+      <ion-input [(ngModel)]="doador.cpf" name="cpf" clearInput type="number"></ion-input>
     </ion-item>
 
     <ion-item>
-          <ion-label position="floating">Data Nascimento</ion-label>
-          <ion-datetime [(ngModel)]="doador.dtnasc" displayFormat="DD/MM/YYYY" ></ion-datetime>
-        </ion-item>
+      <ion-label position="floating">Data Nascimento</ion-label>
+      <ion-datetime [(ngModel)]="doador.dtnasc" name="dtnasc" displayFormat="DD/MM/YYYY"></ion-datetime>
+    </ion-item>
 
-    
+
 
     <!-- <ion-item>
         <ion-label position="floating">Peso</ion-label>
@@ -34,17 +35,17 @@
 
     <ion-item>
       <ion-label position="floating">Endereço</ion-label>
-      <ion-input [(ngModel)]="doador.endereco" clearInput type="text"></ion-input>
+      <ion-input [(ngModel)]="doador.endereco" name="endereco" clearInput type="text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">Telefone</ion-label>
-      <ion-input [(ngModel)]="doador.telefone" clearInput type="tel"></ion-input>
+      <ion-input [(ngModel)]="doador.telefone" name="telefone" clearInput type="tel"></ion-input>
     </ion-item>
 
-    <ion-item> 
-        <ion-label position="floating">Tipo Sanguíneo</ion-label>
-      <ion-select  [(ngModel)]="doador.tipoSang" interface="popover">   
+    <ion-item>
+      <ion-label position="floating">Tipo Sanguíneo</ion-label>
+      <ion-select [(ngModel)]="doador.tipoSang" name="tipoSang" interface="popover">
         <ion-select-option value="A+">A +</ion-select-option>
         <ion-select-option value="B+">B +</ion-select-option>
         <ion-select-option value="A-">A -</ion-select-option>
@@ -62,23 +63,20 @@
 
     <ion-item>
       <ion-label position="floating">E-mail</ion-label>
-      <ion-input required [(ngModel)]="doador.email" clearInput type="email"></ion-input>
+      <ion-input required [(ngModel)]="doador.email" name="email" clearInput type="email"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label position ="floating">Senha</ion-label>
-      <ion-input required [(ngModel)]="doador.senha" clearInput type="password"></ion-input>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input required [(ngModel)]="doador.senha" name="senha" clearInput type="password"></ion-input>
     </ion-item>
 
-    
-
-
     <ion-item>
-      <ion-button (click)="salvar()" color="dark" class="b3">
+      <ion-button type="submit" color="dark" class="b3">
         <h6>Salvar</h6>
       </ion-button>
     </ion-item>
-  
 
-  
+  </form>
+
 </ion-content>

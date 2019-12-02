@@ -12,12 +12,13 @@ export class VisualizarPorHospitalPage implements OnInit {
   hospitais: any;
   url = 'http://www.ubtlogistica.com.br/arquivoJson';
   ibge = 'http://servicodados.ibge.gov.br/api/v1/localidades/estados';
-  metadata = 'https://servicodados.ibge.gov.br/api/v3/agregados/1705/localidades/N7'      
+  metadata = 'https://servicodados.ibge.gov.br/api/v3/agregados/1705/localidades/N7' 
+  empresa = 'http://www.transparencia.gov.br/api-de-dados/cepim?pagina=1';        
 
   constructor(private http:HttpClient) { }
 
   getHospital():Observable<any>{
-    return this.http.get<any>(this.metadata);
+    return this.http.get<any>(this.empresa);
   }
 
   ngOnInit() {

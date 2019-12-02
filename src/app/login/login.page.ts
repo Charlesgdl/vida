@@ -14,14 +14,8 @@ export class LoginPage implements OnInit {
   }
 
   public acessar(){
-    if((this.login.email=="daniel@gmail.com") &&
-    (this.login.senha="123456")){
       console.log(this.login);
       alert("Acesso permitido");
-    }else{
-      alert("Acesso não permitido");
-    }
-     
   }
 
 }

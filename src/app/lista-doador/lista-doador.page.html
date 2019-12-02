@@ -1,4 +1,6 @@
 <ion-header>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
   <ion-toolbar color="dark">
       <ion-buttons slot="start">
           <ion-back-button defaultHref="home"></ion-back-button>
@@ -10,8 +12,13 @@
 <ion-content>
     <ion-searchbar></ion-searchbar>
     <ion-card *ngFor="let doador of doadores">
+        <ion-list>
         <ion-item>
-                <h4>{{doador.nome}}</h4>          
+                <h4>{{doador.nome}} - {{doador.localidade}}</h4>          
           </ion-item>
+        </ion-list>
     </ion-card>
+    
 </ion-content>
+
+
