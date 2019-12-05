@@ -18,6 +18,7 @@ export class CadastroUsuarioPage implements OnInit {
   public salvar(){
     console.log(this.doador);
     alert("Registro salvo com sucesso");
+ 
   }
 
 }
