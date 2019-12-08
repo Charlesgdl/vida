@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -10,11 +10,12 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
 export class CadastroUsuarioPage implements OnInit {
 
   public doador:Usuarios = new Usuarios()
-  constructor(private sqlite: SQLite) {}
+  constructor(private http: HttpClient) {}
 
     ngOnInit() {
   }
 
+  
   public salvar(){
     console.log(this.doador);
     alert("Registro salvo com sucesso");
