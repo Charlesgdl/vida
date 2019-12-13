@@ -29,4 +29,7 @@ import { SQLite, SQLiteObject } from '@ionic-native/sqlite/ngx';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+    
+
+}

@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class CadastroUsuarioPage implements OnInit {
 
   public doador:Usuarios = new Usuarios()
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
     ngOnInit() {
   }

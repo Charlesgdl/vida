@@ -13,11 +13,11 @@
 <ion-content>
   <ion-grid>
     <ion-row class="linha">
-      <ion-button class="b1" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
-        <h1>A +</h1>
+      <ion-button (click)="imprime()" class="b1" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>A + mostra</h1>
       </ion-button>
-      <ion-button class="b2" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
-        <h1>B +</h1>
+      <ion-button (click)="mudaVis1()" class="b2" color="dark" [routerDirection]="'root'" [routerLink]="['/visualizar-por-sangue']">
+        <h1>B + muda Visivel</h1>
       </ion-button>
     </ion-row>
 
@@ -56,8 +56,8 @@
     </ion-row>
 
  
-      <ion-item class="btnDoadores">
-      <ion-button class="b3" color="dark" [routerDirection]="'root'" [routerLink]="['/lista-doador']">
+      <ion-item *ngIf="mudaVis1() > 0" class="btnDoadores" >
+      <ion-button  class="b3" color="dark" [routerDirection]="'root'" [routerLink]="['/lista-doador']">
         <ion-icon slot="start" name="people"></ion-icon>
         <h1>Doadores</h1>
       </ion-button>
